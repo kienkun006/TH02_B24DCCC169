@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import WeatherApp from "./components/WeatherApp.tsx";
 import StudentList from "./components/StudentList.tsx";
 import NewsApp from "./components/NewsApp.tsx";
-import StudentDetail from "./components/StudentDetail";
+import StudentDetail from "./components/StudentDetail.tsx";
 
 
 function App() {
@@ -31,4 +31,3 @@ function App() {
 }
 
 export default App;
-
