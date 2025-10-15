@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import WeatherApp from "./components/WeatherApp.tsx";
 import StudentList from "./components/StudentList.tsx";
 import NewsApp from "./components/NewsApp.tsx";
+import StudentDetail from "./components/StudentDetail";
 
 
 function App() {
@@ -18,9 +19,10 @@ function App() {
         </nav>
 
         <Routes>
-          <Route path="/" element={<h2>Chọn bài thực hành ở trên 👆</h2>} />  
+          <Route path="/" element={<h2>Hãychon bài thực hành ở trên </h2>} />  
           <Route path="/weather" element={<WeatherApp />} />
           <Route path="/students" element={<StudentList />} />
+           <Route path="/students/:id" element={<StudentDetail />} />
           <Route path="/news" element={<NewsApp />} />
         </Routes>
       </div>
